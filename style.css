@@ -140,14 +140,14 @@ p {
 }
 
 .section {
-  padding: 5rem 0;
+  padding: 3rem 0;
 }
 
 .section-title {
   font-family: var(--type-family-heading);
   font-size: var(--type-scale-3);
   display: inline-block;
-  margin: 0 0 1em 0;
+  margin: 1em 0;
 }
 
 .gallery {
@@ -170,10 +170,11 @@ p {
 section#intro {
   border-top: solid 15px var(--color-amber);
   flex: 1;
+  padding: 5rem 0 3rem 0;
 }
 
 section#contact {
-  padding-bottom: 6rem;
+  padding: 3rem 0 6rem 0;
 }
 
 footer {
