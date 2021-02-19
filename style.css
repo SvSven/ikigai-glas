@@ -14,6 +14,7 @@
   --color-indigo: rgb(63, 81, 181);
   --color-amber: rgb(255, 171, 0);
   --color-deep-orange: rgb(230, 74, 25);
+  --color-cyan: rgb(0, 151, 167);
 }
 
 * {
@@ -148,4 +149,32 @@ footer {
   padding: 2rem 0;
   text-align: center;
   color: var(--color-white);
+  font-size: calc(var(--type-scale-1) * 0.9);
+  border-top: solid 20px var(--color-cyan);
+}
+
+footer p {
+  margin: 0;
+}
+
+.company-details {
+  display: inline-grid;
+  grid-template-columns: 1fr;
+  grid-gap: var(--type-scale-1);
+}
+
+.company-details p:first-of-type {
+  font-weight: bold;
+  margin: 0;
+}
+
+@media screen and (min-width: 850px) {
+  .company-details {
+    grid-template-columns: repeat(3, auto);
+  }
+
+  .company-details p:first-of-type {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
 }
